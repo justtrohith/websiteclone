@@ -1,0 +1,34 @@
+{
+  "sections": [
+    {
+      "title": "Section 1",
+      "paragraph": "This is the first section of the page.",
+      "textColor": "text-white",
+      "bgColor": "bg-blue-500"
+    },
+    {
+      "title": "Section 2",
+      "paragraph": "This is the second section of the page.",
+      "textColor": "text-black",
+      "bgColor": "bg-yellow-400"
+    },
+    {
+      "title": "Section 3",
+      "paragraph": "This is the third section of the page.",
+      "textColor": "text-white",
+      "bgColor": "bg-green-500"
+    },
+    {
+      "title": "Section 4",
+      "paragraph": "This is the fourth section of the page.",
+      "textColor": "text-black",
+      "bgColor": "bg-red-500"
+    },
+    {
+      "title": "Section 5",
+      "paragraph": "This is the fifth section of the page.",
+      "textColor": "text-white",
+      "bgColor": "bg-purple-500"
+    }
+  ]
+}
