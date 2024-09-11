@@ -1,7 +1,5 @@
-
 import Banner from "@/components/Banner";
 import Brainstorm from "@/components/Brainstorm";
-import ChatWithUs from "@/components/ChatWithUs";
 import Design from "@/components/Design";
 import Header from "@/components/Header";
 import Implementation from "@/components/Implementation";
@@ -9,6 +7,8 @@ import Inside from "@/components/Inside";
 import Skills from "@/components/Skills";
 import Team from "@/components/Team";
 import Testomonials from "@/components/Testomonials";
+
+
 
 
 
@@ -27,7 +27,7 @@ export default function Home() {
       <Testomonials/>
       <Team/>
       <Skills/>
-      <ChatWithUs/>
+      
     </div>
   );
 }

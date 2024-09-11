@@ -21,6 +21,12 @@ body {
   
 }
 
+@layer base {
+  .section-heading{
+    @apply text-[36px] mb-[30px] text-center leading-[46px] custom-480:text-[60px] custom-480:leading-[70px] md:text-[68px] md:leading-[78px] lg:text-[120px] lg:leading-[125px];
+  }
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;

@@ -28,14 +28,14 @@ interface Service {
 
 function Skills() {
   return (
-    <div className=" mx-auto py-24 px-5 flex flex-col md:flex-row">
-      {/* Left Section - Skills & Services Title */}
-      <div className="md:w-1/2">
-        <h2 className="text-9xl font-bold mb-12">Skills & Services</h2>
+    <div className=" mx-auto py-24 px-5 flex flex-col lg:flex-row">
+      
+      <div className="lg:w-1/2">
+        <h2 className="text-[36px] md:text-[60px] lg:text-[120px] font-bold mb-12">Skills & Services</h2>
       </div>
 
-      {/* Right Section - Services */}
-      <div className="md:w-1/2 space-y-12">
+      
+      <div className="lg:w-1/2 space-y-12">
         {services.map((service, index) => (
           <div key={index} className="border-t pt-6">
             <h3 className="text-2xl font-semibold mb-4">{service.title}</h3>

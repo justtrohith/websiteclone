@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 interface TeamMember {
@@ -21,7 +22,7 @@ interface TeamMember {
     },
     {
         name: 'Mike',
-        description: `Mike is the creative genius behind Digital Solutions, holding the role of Head of Creative Design. With a flair for innovation and an eye for aesthetics, he plays a pivotal role in bringing our clients' brands to life. Mike's journey in the design world began at a young age, and his passion for creativity has only grown stronger with time. With years of experience, Michael has honed his skills in graphic design, web design, and user interface development, ensuring that every design element aligns with the latest industry standards.`,
+        description: `Mike is the creative genius behind Digital Solutions, holding the role of Head of Creative Design. With a flair for innovation and an eye for aesthetics, he plays a pivotal role in bringing our clients' brands to life. Mike&#39;s journey in the design world began at a young age, and his passion for creativity has only grown stronger with time. With years of experience, Michael has honed his skills in graphic design, web design, and user interface development, ensuring that every design element aligns with the latest industry standards.`,
         imageSrc: '/images/Mike-Image.jpg',
         textColor: 'text-black',  
         bgColor: 'bg-white',
@@ -41,11 +42,20 @@ function Team() {
   return (
     <div>
         <div className='px-[20px] py-[90px] flex flex-col items-center justify-center bg-black'>
-        <div className="w-[600px]">
-            <h2 className='text-[100px] mb-[30px] text-white text-center' >Meet the team Behind</h2>
+        <div className="">
+            <h2 className='section-heading text-white max-w-[250px] custom-480:max-w-[400px] md:max-w-[500px] lg:max-w-[800px]' >Meet the team Behind</h2>
         </div>
         <div className='mb-[40px]'>
-            <div className='w-[350px] h-[350px] bg-white'></div>
+            <div >
+            <div className='w-full h-full max-w-[350px]'>
+            <Image
+            src='/images/Design.png'
+            alt='Brainstrom'
+            className="w-full h-auto  object-cover"
+            width={600}
+            height={600}/>
+            </div>
+            </div>
         </div>
         
     </div>
@@ -57,16 +67,18 @@ function Team() {
             >
             
             <div className="md:w-1/2 p-8">
-                <h2 className="text-5xl font-bold mb-4">{member.name}</h2>
+                <h2 className="section-heading">{member.name}</h2>
                 <p className="text-lg">{member.description}</p>
             </div>
 
             
-            <div className="w-1/2">
-                <img
+            <div className="w-full lg:w-1/2 relative">
+                <Image
                 src={member.imageSrc}
                 alt={member.name}
                 className="w-full h-auto  object-cover"
+                width={600}
+                height={600}
                 />
             </div>
             </div>
