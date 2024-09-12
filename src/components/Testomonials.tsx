@@ -1,5 +1,6 @@
 import Link from "next/link"
 import React from 'react';
+import ContactButton from "./ContactButton";
 
 interface Testimonials {
   quote: string;
@@ -56,12 +57,7 @@ function Testomonials() {
             </div>
         </div>
         </div>
-        <div >
-            <Link href={"/contactus"}>
-                <button className='py-[10px] px-[55px] bg-black text-white'>Contact Us</button>
-            </Link>
-        </div>
-        <div></div>
+        <ContactButton theme="dark"/>
     </div>
   )
 }

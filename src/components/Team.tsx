@@ -41,16 +41,16 @@ interface TeamMember {
 function Team() {
   return (
     <div>
-        <div className='px-[20px] py-[90px] flex flex-col items-center justify-center bg-black'>
+        <div className='px-[20px] py-[90px] flex flex-col items-center justify-center dark-part'>
         <div className="">
-            <h2 className='section-heading text-white max-w-[250px] custom-480:max-w-[400px] md:max-w-[500px] lg:max-w-[800px]' >Meet the team Behind</h2>
+            <h2 className='section-heading max-w-[250px] custom-480:max-w-[400px] md:max-w-[500px] lg:max-w-[800px]' >Meet the team Behind</h2>
         </div>
         <div className='mb-[40px]'>
             <div >
             <div className='w-full h-full max-w-[350px]'>
             <Image
             src='/images/Design.png'
-            alt='Brainstrom'
+            alt='Team'
             className="w-full h-auto  object-cover"
             width={600}
             height={600}/>
@@ -72,7 +72,7 @@ function Team() {
             </div>
 
             
-            <div className="w-full lg:w-1/2 relative">
+            <div className="w-full md:align-middle  md:w-1/2 lg:w-1/2 relative">
                 <Image
                 src={member.imageSrc}
                 alt={member.name}

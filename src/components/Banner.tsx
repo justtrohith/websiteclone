@@ -19,7 +19,7 @@ function Banner() {
       </div>
 
       {/* Image Placeholder */}
-      <div className="w-full h-full max-w-[700px] bg-black">
+      <div className="w-full h-full max-w-[700px]">
         <Image 
         src='/images/Brainstorm.png'
         alt='Brainstrom'
