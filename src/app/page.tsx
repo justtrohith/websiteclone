@@ -2,9 +2,11 @@ import ContactButton from '@/components/ContactButton';
 import ImageContainer from '@/components/ImageContainer';
 
 import Inside from "@/components/Inside";
+
 import Skills from "@/components/Skills";
 import Team from "@/components/Team";
 import Testomonials from "@/components/Testomonials";
+
 import Image from "next/image";
 
 
@@ -18,9 +20,12 @@ export default function Home() {
   return (
     <div>
       {/* Heading */}
-        <div className="p-5 flex items-center justify-center">
-          <div className="h-[70px] w-[70px] bg-black">
-           </div>
+        <div className="p-5 mt-16 flex items-center justify-center">
+          <div className='w-[120px]'>
+            <ImageContainer src='/images/Image-Logo.webp' alt='Logo' />
+          </div>
+        
+           
         </div>
 
       {/* Banner */}

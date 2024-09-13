@@ -3,33 +3,34 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
+  --bg-light: 255, 255, 255;
+  --text-light: 0, 0, 0;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+  --bg-dark: 0, 0, 0;
+  --text-dark: 255, 255, 255;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  
+  color: rgb(var(--text-light));
+  background-color: rgb(var(--bg-light));
+}
+
+.dark body {
+  background-color: rgb(var(--bg-dark));
+  color: rgb(var(--text-dark));
 }
 
 @layer base {
-  .section-heading{
+  .section-heading {
     @apply text-[36px] mb-[30px] text-center leading-[46px] custom-480:text-[60px] custom-480:leading-[70px] md:text-[68px] md:leading-[78px] lg:text-[120px] lg:leading-[125px];
   }
-  .dark-part{
-    @apply text-white bg-black;
+  .dark-part {
+    background-color: rgb(var(--bg-dark));
+    color: rgb(var(--text-dark));
   }
-  .light-part{
-    @apply text-black bg-white;
+  .light-part {
+    background-color: rgb(var(--bg-light));
+    color: rgb(var(--text-light));
   }
 }
 
